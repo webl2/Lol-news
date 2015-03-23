@@ -422,7 +422,7 @@ width: 873px;
 }
 .icon-cancel
 {
-  
+  display: none;
   color: #e71010;
 }
 

@@ -1,10 +1,17 @@
-<SCRIPT language="javascript">
-   function ValiderMail(formulaire) {
-      if (formulaire.mail.value.indexOf("@",0)<0) {alert("Adresse mail saisie invalide.\nLe formulaire ne sera pas validé.")}
-      else {
-         alert("Formulaire validé.\nPour valider un formulaire : formulaire.submit()");
-         // Pour valider le formulaire en javascript :
-         // formulaire.submit()
-      }
-   }
-</SCRIPT>
+(function()
+{
+	var formulaire = document.getElementById('formulaire');
+	var email = document.getElementById('email');
+
+	formulaire.addEventListener('input', function()
+	{
+		var mail = new RegExp(/^[0-9a-zA-Z._-]+@[0-9a-z._-]+\.[a-z]{2,}$/);
+		var test = mail.test(email.value);
+	
+		if(test)
+		{
+			var element = document.getElementsByClassName(icon-check);
+			element.style.display = initial;
+		}
+	});
+}());
