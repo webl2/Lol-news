@@ -418,10 +418,12 @@ width: 873px;
 .icon-check
 {
   display: none;
+  color: #27cc27;
 }
 .icon-cancel
 {
-  display: none;
+  
+  color: #e71010;
 }
 
 /*****************************************
