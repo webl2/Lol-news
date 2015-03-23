@@ -377,6 +377,47 @@ width: 873px;
 }
 /*****************************************
 
+              CONNEXION.HTML
+
+******************************************/
+#article_connexion
+{
+	float:left;
+	width: 100%;
+}
+#section_connexion
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+.legend_cadre
+{
+	font-size: 1.5em;
+	text-shadow: #000000 0.1em 0.1em 0.2em;
+	color: #b1ab8f;
+}
+/*****************************************
+
+              INSCRIPTION.HTML
+
+******************************************/
+.champInscription input
+{
+	width: 40%;
+}
+.champInscription p
+{
+  display: inline-block;
+  width: 50%;
+}
+#btnInscription
+{
+	margin-left: 50%;
+}
+
+/*****************************************
+
               MEDIA QUERY
 
 ******************************************/

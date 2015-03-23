@@ -30,16 +30,19 @@
       </blockquote>
       <article id="article_connexion">
 	  	<section id="section_connexion">
-			<form method="post" name="form_connexion" action="connexion.php" onSubmit="return verif_mail()">
-				<fieldset class="fieldset_cadre">
-						<legend class="legend_cadre">Connexion</legend>
-						<input type="text" placeholder="Adresse électronique" maxlength="40" id="identifiant" name="identifiant" required />
-						<input type="password" placeholder="Mot de passe" maxlength="40" id="motdepasse" name="motdepasse" required /><div id="truc"></div><br />
-						<input type="checkbox" name="souvenir" /><label>Se souvenir de moi</label><br />
-						<input type="submit" name="connexion" id="btn_connexion" value="Se connecter" />
-				</fieldset>
-			</form>
-			<a href="inscription.html">Inscription</a>
+			<form method="post" action="inscription.php" onSubmit="return(VerifForm(this))">
+					<fieldset class="fieldset_cadre">
+						<legend class="legend_cadre">Inscription</legend>
+						<div class="champInscription"><p>Prénom:</p><input type="text" placeholder="Prénom" name="prenom" required /></div>
+						<div class="champInscription"><p>Nom:</p><input type="text" placeholder="Nom de famille" name="nom" required /></div>
+						<div class="champInscription"><p>Date de naissance:</p><input type="text" placeholder="Date de naissance" name="dateNaissance" required /></div>
+						<div class="champInscription"><p>Utilisateur:</p><input type="text" placeholder="Nom d'utilisateur" name="nomUtilisateur" required /></div>
+						<div class="champInscription"><p>Mot de passe:</p><input type="password" placeholder="Mot de passe" name="mdp" required /></div>
+						<div class="champInscription"><p>Adresse e-mail:</p><input type="text" placeholder="Adresse électronique" name="email" id="email" required /></div>
+						
+						<input type="submit" alt="Inscritption" id="btnInscription" value="S'inscrire" />
+					</fieldset>
+				</form>
 		</section>
       </article>
       <footer> 
