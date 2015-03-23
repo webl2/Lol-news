@@ -14,8 +14,7 @@
 	var mailreg = new RegExp(/^[0-9a-zA-Z._-]+@[0-9a-z._-]+\.[a-z]{2,}$/);
 	var ins = document.getElementsByClassName('champInscription');
 	var datereg = new RegExp(/^\d{2}[./-]\d{2}[./-]\d{4}$/);
-	
-	
+	var mdpreg = new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/);
 
 	//Validation champ Date
 	ins[2].addEventListener('input', function()
@@ -105,8 +104,8 @@
 	//Validation champ Mot de passe
 	ins[4].addEventListener('input', function()
 	{
-		alert(mdpreg.test(mdp[0].value));
-		if(mdp[0].value.length >=8)
+		
+		if(mdpreg.test(mdp[0].value))
 		{
 			valid[4].style.display='initial';
 			notvalid[4].style.display='none';
@@ -119,6 +118,18 @@
 			notvalid[4].style.display='initial';
 			mdp[0].style.borderColor='rgba(230, 12, 12, 0.66)';
 		}
+	});
+	formulaire.addEventListener('input', function()
+	{
+		if(datereg.test(date[0].value) && mailreg.test(email.value) && nomUtilisateur[0].value.length >= 6 && prenom[0].value && nom[0].value && mdpreg.test(mdp[0].value))
+		{
+			document.getElementById('btnInscription').removeAttribute('disabled');
+		}
+		else
+		{
+			document.getElementById('btnInscription').setAttribute('disabled');
+		}
+		
 	});
 
 }());
