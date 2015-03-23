@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Description" content="">
+    <link rel="icon" href="#">
+    <title>LOL News</title>
+  </head>
+
+  <body>
+      <header>
+        <img src="#" alt=""/>
+      </header>
+      <nav>
+        <ul>
+          <a href="index.html"><li>Accueil</li></a>
+          <a href="champion.html"><li>Champions</li></a>
+          <a href="connexion.html"><li>Connexion</li></a>
+        </ul>
+      </nav>
+      <article>
+        <h1>Connexion</h1>
+        <section>
+          <h2>Titre2</h2>
+          <img src="#" alt=""/>
+          <p>Denique Antiochensis ordinis vertices sub uno elogio iussit occidi ideo efferatus, quod ei celebrari vilitatem intempestivam urgenti, cum inpenderet inopia, gravius rationabili responderunt; et perissent ad unum ni comes orientis tunc Honoratus fixa constantia restitisset.</p>
+          <a href="#"></a>
+        </section>
+        
+      </article>
+      <footer> 
+        <p><a href="#">Retour haut de page</a></p>
+        <p>&copy; 2015 LOL News &middot; <a href="#">WEINKOPF</a> &middot; <a href="#">JEROME</a></p>
+      </footer>
+    <script src="#"></script>
+  </body>
+</html>
