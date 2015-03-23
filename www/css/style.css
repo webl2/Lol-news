@@ -415,6 +415,14 @@ width: 873px;
 {
 	margin-left: 50%;
 }
+.icon-check
+{
+  display: none;
+}
+.icon-cancel
+{
+  display: none;
+}
 
 /*****************************************
 
