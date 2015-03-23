@@ -405,6 +405,7 @@ width: 873px;
 .champInscription input
 {
 	width: 35%;
+  border-radius: 5px;
 }
 .champInscription p
 {
