@@ -2,10 +2,10 @@
 {
 	var formulaire = document.getElementById('formulaire');
 	var email = document.getElementById('email');
-	var nomUtilisateur = document.getElementsByName('nomUtilisateur');
-	var prenom = document.getElementsByName('prenom');
-	var nom = document.getElementsByName('nom');
-	var mdp = document.getElementsByName('mdp');
+	var nomUtilisateur = document.getElementsByName('username');
+	var prenom = document.getElementsByName('firstname');
+	var nom = document.getElementsByName('lastname');
+	var mdp = document.getElementsByName('userpwd');
 	var date = document.getElementsByName('dateNaissance');
 	//Tableau de taille 6 contenant les icones HTML validation ok
 	var valid = document.getElementsByClassName('icon-check');

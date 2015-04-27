@@ -1,4 +1,7 @@
-
+a
+{
+  color: rgb(213,149,27);
+}
 /*****************************************
 
           MENU DE NAVIGATION 
@@ -408,6 +411,10 @@ width: 873px;
 	font-size: 1.5em;
 	text-shadow: #000000 0.1em 0.1em 0.2em;
 	color: #b1ab8f;
+}
+#reponse
+{
+  display: block;
 }
 /*****************************************
 
